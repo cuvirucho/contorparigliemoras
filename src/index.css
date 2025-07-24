@@ -1,0 +1,373 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heder{
+  background-color:rgba(137, 43, 226, 0);
+  width: 100%;
+
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/*pagian1 donde estan las intruciones y el ingros por codigo**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo{
+  margin-top: 1px;
+  
+  width: 80%;
+    max-height:6rem;
+  object-fit: scale-down;
+}
+
+
+.logo2{
+  margin-top: 1px;
+  
+  width: 100%;
+    max-height:5rem;
+  object-fit: scale-down;
+}
+
+
+
+
+
+.contepinsipalusuaro{
+
+  margin-top: -10px;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+}
+/*no hya usurios */
+
+.nohyususpcontepriopñl{
+ background-image: url("https://res.cloudinary.com/db8e98ggo/image/upload/v1735946384/Dise%C3%B1o_sin_t%C3%ADtulo_4_uzsy4d.png");
+ background-size: cover;
+ background-position: -29rem -30px;
+ width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.coocmofuna{
+  background-color: rgba(127, 255, 212, 0);
+  width: 95%;
+padding: 12px;
+text-align: center;
+border-radius: 20px;
+border: solid 2px antiquewhite;
+border-style: groove;
+box-shadow: 0px 2px 10px rgb(111, 0, 255);
+  color: antiquewhite;
+}
+.comofr{
+  background-color: rgba(153, 205, 50, 0);
+  text-align: start;
+  font-size: clamp(1.2rem,2rem,1vw);
+  font-style: italic;
+  margin-top: 4px;
+  margin-bottom: 1px;
+}
+
+
+
+.conteigersarcful{
+  background-color: rgba(0, 255, 255, 0);
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: antiquewhite;
+}
+
+
+
+.tuloingr{
+  background-color: rgba(153, 205, 50, 0);
+   font-size: clamp(1.8rem,2rem,1vw);
+}
+
+
+.imputcodigo{
+  background-color: rgba(250, 235, 215, 0.973);
+  width: 90%;
+  padding: 15px;
+  border: none;
+  border-radius: 25rem;
+  font-size: clamp(1rem,2rem,1vw);
+  box-shadow: 0rem 0.2rem 2rem rgb(98, 0, 255);
+  margin-top: 20px;
+}
+
+
+.imputcodigo:focus {
+  border: none;
+   outline: none;
+ transform: scale(1, 1.05);
+ 
+}
+
+
+
+
+
+.btngo{
+  background-color: rgba(98, 1, 253, 0.616);
+  margin-top: 50px;
+  padding: 12px 29px;
+  font-size: clamp(0.9rem,2rem,1vw);
+  font-style: italic;
+border: none;
+border-radius: 50rem;
+color: rgba(250, 235, 215, 0.808);
+}
+
+.btngo:hover{
+  background-color: gold;
+  color: blueviolet;
+}
+
+/*cunado hay ususurop*/
+
+.CONTEdetllesprinciplaes{
+  background-color: rgba(255, 255, 255, 0);
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tulobinevb{
+  font-size: clamp(1.8rem,2rem,1vw);
+  color: blueviolet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform:  capitalize;
+}
+.textudga{
+  background-color: rgba(238, 130, 238, 0);
+    font-size: clamp(1.1rem,2rem,1vw);
+    margin-top: 4px;
+    font-style: italic;
+}
+.gantec{
+  background-color: blueviolet;
+  color: antiquewhite;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 360rem;
+  height: 100%;
+  width: 35%;
+  margin-bottom: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem,2rem,1vw);
+}
+.gantex{
+  
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -6px;
+}
+
+.contepaggorealisdo{
+  background-color: rgba(255, 99, 71, 0);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+.itmepagocar{
+ 
+  margin: 1rem;
+  display: flex;
+  min-width:  250px;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+border-radius: 10px;
+font-size: clamp(1rem,2rem,1vw);
+border: solid 2px rebeccapurple;
+border-style:  double ;
+box-shadow: -0.2rem -0rem 0.9rem blueviolet;
+color: blueviolet;
+}
+.tilopaogs{
+  background-color: rgba(153, 205, 50, 0);
+  font-size: clamp(1.7rem,2rem,1vw);
+  margin-left: 10px;
+  color: blueviolet;
+}
+.tilopaogs2{
+  background-color: rgba(153, 205, 50, 0);
+  font-size: clamp(1.5rem,2rem,1vw);
+  margin-left: 10px;
+  margin-top: 50px;
+  color: blueviolet;
+}
+.tilopaogs3{
+  background-color: rgba(153, 205, 50, 0);
+  font-size: clamp(1.7rem,2rem,1vw);
+ 
+ 
+  text-align: center;
+  color: blueviolet;
+}
+.texprimpaog{
+  background-color: rgba(153, 205, 50, 0);
+  font-size: clamp(1rem,2rem,1vw);
+ font-style: italic;
+ margin-top: 10px;
+  text-align: center;
+  color: blueviolet;
+}
+.cotecodifusados{
+  background-color:rgba(153, 205, 50, 0);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px;
+  max-height: 800px;
+  min-height: 200px;
+  height: auto;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.carcodugo{
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  color: blueviolet;
+  border: solid 2px rebeccapurple;
+ 
+}
+.comprobanteURL{
+  background-color: aqua;
+  width: 40px;
+  object-fit: scale-down;
+}
+
+
+/*carusen de prkoms*/
+
+.carrusel-container {
+  width: 100%;
+height: 200px;
+background: #f8b60000;
+height: auto;
+margin-top: 20px;
+}
+
+
+.tulotarjetas{
+  background-color: rgba(153, 205, 50, 0);
+  font-size: clamp(1.5rem,2rem,1vw);
+ 
+ 
+  text-align: center;
+  color: blueviolet;
+}
+
+.carrusel-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+ width: auto;
+  height: auto;
+  background-color: rgba(0, 255, 255, 0);
+  margin: 10px ;
+  overflow: hidden;
+overflow-x: auto;
+justify-content: space-between;
+gap: 20px;
+align-items: center;
+ padding: 10px;
+ 
+}
+
+.carrusel-img {
+  width: 100%;
+border-radius: 20px;
+  max-height: 9rem;
+  min-height: 9rem;
+  object-fit: scale-down;
+}
+
+.cmotex {
+ width: 100%;
+  margin-bottom: 4px;
+font-family: 'Montserrat', sans-serif;
+  padding-left: 0rem;     /* espacio antes del texto */
+  text-indent: -1rem;     /* hace que la primera línea retroceda */
+
+
+font-weight: 300; 
+}
+.contenedorcomotexto{
+  background-color: #91312800;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 15px;
+
+}
+
+.txtoinixcal{
+  background-color: #d79a0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.8rem, 2vw, 2.5rem);
+  color: var(--color-secundario);
+  font-weight: 500;
+  padding: 10px;
+  width: 75%;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Montserrat', sans-serif;
+transform: translate(-0%, -0%);
+}
+.foo{
+  height: 90px;
+}
