@@ -204,24 +204,31 @@ const obtenerRangoSemanaActual = () => {
 
 
 
-          <h4 className="tilopaogs2" >Codigos Usados</h4>
-<div className="cotecodifusados"  >
-{Object.entries(usuario.codigosusados)
-  .filter(([_, us]) => {
-    const { inicio, fin } = obtenerRangoSemanaActual();
-    const fechaUso = us.fechdeuso?.toDate?.(); // Asegura que es Date
-    return fechaUso >= inicio && fechaUso <= fin;
-  })
-  .map(([key, us]) => (
+    
+<h4 className="tilopaogs2">Códigos Usados</h4>
 
-            <div key={key} className="carcodugo">
-              <p><strong>Nombre del usuario:</strong> {us.Nombre}</p>
-             
-             <p><strong>Ganancia recibida:</strong> $ {us.porsentajeparaelinflu?.toFixed(2)}</p>
+{(() => {
+  const { inicio, fin } = obtenerRangoSemanaActual();
+  const codigosUsadosEstaSemana = Object.entries(usuario.codigosusados || {})
+    .filter(([_, us]) => {
+      const fechaUso = us.fechdeuso?.toDate?.(); // Asegura que es un objeto Date
+      return fechaUso >= inicio && fechaUso <= fin;
+    });
 
-            </div>
-          ))}
+  return codigosUsadosEstaSemana.length > 0 ? (
+    <div className="cotecodifusados">
+      {codigosUsadosEstaSemana.map(([key, us]) => (
+        <div key={key} className="carcodugo">
+          <p><strong>Nombre del usuario:</strong> {us.Nombre}</p>
+          <p><strong>Ganancia recibida:</strong> $ {us.porsentajeparaelinflu?.toFixed(2)}</p>
         </div>
+      ))}
+    </div>
+  ) : (
+    <p className="texprimpaog">No hay códigos usados hasta ahora</p>
+  );
+})()}
+
 
 
 
