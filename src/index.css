@@ -181,6 +181,7 @@ color: rgba(250, 235, 215, 0.808);
 }
 .gantec{
   background-color: blueviolet;
+  box-shadow: -0.2rem -0rem 0.9rem blueviolet;
   color: antiquewhite;
   margin-top: 0.5rem;
   padding: 0.5rem;
@@ -204,9 +205,9 @@ color: rgba(250, 235, 215, 0.808);
 }
 
 .contepaggorealisdo{
-  background-color: rgba(255, 99, 71, 0);
+  background-color: rgba(255, 99, 71, 0); 
   width: 100%;
-  height: auto;
+  height: 12rem;
   display: flex;
   overflow: hidden;
   overflow-x: auto;
@@ -214,10 +215,11 @@ color: rgba(250, 235, 215, 0.808);
   align-items: center;
 }
 .itmepagocar{
- 
+ background-color: rgba(238, 130, 238, 0);
   margin: 1rem;
   display: flex;
   min-width:  250px;
+  box-shadow: -0.5rem -0rem 0.9rem rgba(54, 54, 54, 0.432);
   flex-direction: column;
   gap: 5px;
   padding: 15px;
@@ -225,12 +227,20 @@ color: rgba(250, 235, 215, 0.808);
   justify-content: center;
   align-items: center;
 border-radius: 10px;
-font-size: clamp(1rem,2rem,1vw);
+font-size: clamp(1.1rem,2rem,1vw);
 border: solid 2px rebeccapurple;
 border-style:  double ;
-box-shadow: -0.2rem -0rem 0.9rem blueviolet;
+
 color: blueviolet;
 }
+
+.botondescarga{
+  background-color: rgba(0, 255, 255, 0);
+  color: blueviolet;
+}
+
+
+
 .tilopaogs{
   background-color: rgba(153, 205, 50, 0);
   font-size: clamp(1.7rem,2rem,1vw);
@@ -238,10 +248,10 @@ color: blueviolet;
   color: blueviolet;
 }
 .tilopaogs2{
-  background-color: rgba(153, 205, 50, 0);
+  background-color: rgba(179, 16, 255, 0);
   font-size: clamp(1.5rem,2rem,1vw);
   margin-left: 10px;
-  margin-top: 50px;
+  margin-top: 10px;
   color: blueviolet;
 }
 .tilopaogs3{
@@ -261,7 +271,7 @@ color: blueviolet;
   color: blueviolet;
 }
 .cotecodifusados{
-  background-color:rgba(153, 205, 50, 0);
+  background-color:rgba(139, 197, 22, 0);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -280,6 +290,7 @@ color: blueviolet;
   border-radius: 10px;
   color: blueviolet;
   border: solid 2px rebeccapurple;
+    box-shadow: -0.5rem -0rem 0.9rem rgba(54, 54, 54, 0.432);
  
 }
 .comprobanteURL{

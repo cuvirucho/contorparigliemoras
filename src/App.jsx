@@ -95,7 +95,7 @@ const obtenerRangoSemanaActual = () => {
 
 
 
-
+/*revsipagopendeois*/
 
   return (
    <>
@@ -151,43 +151,40 @@ const obtenerRangoSemanaActual = () => {
   
   :
   
-  <>
+  <section>
   
 {/*pagos relisados */}
 
-    
-          <h3 className="tilopaogs">Pagos realizados</h3>
-    
-    
+<h3 className="tilopaogs">Pagos realizados</h3>
 
+{(() => {
+  const pagosRealizados = Object.entries(usuario.Pagosrelisdos || {})
+    .filter(([_, pago]) => pago.estado === "Realizado");
 
-{
-  Object.keys(usuario.Pagosrelisdos).length > 1 ? (
+  return pagosRealizados.length > 0 ? (
     <div className="contepaggorealisdo">
-      {Object.entries(usuario.Pagosrelisdos)
-        .filter(([_, pago]) => pago.estado === "Realizado")
-        .map(([key, pago]) => (
-          <div key={key} className="itmepagocar">
-            <p><strong>Fecha de pago:</strong> {convertirFecha(pago.fchadefin)}</p>
-            <h4>Codigo: {key}</h4>
-            <p><strong>Cantidad:</strong> {pago.cantidades}</p>
-            <p><strong>Estado:</strong> {pago.estado}</p>
-            <a
-              href={pago.comprobanteURL}
-              download={`comprobante_${key}.jpg`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="boton-descarga"
-            >
-              Ver comprobante
-            </a>
-          </div>
-        ))}
+      {pagosRealizados.map(([key, pago]) => (
+        <div key={key} className="itmepagocar">
+          <h4>Codigo: {key}</h4>
+          <p><strong>Fecha de pago:</strong> {convertirFecha(pago.fchadefin)}</p>
+          <p><strong>Estado:</strong> {pago.estado}</p>
+          <p><strong>Cantidad:</strong> {pago.cantidades}</p>
+          <a
+            href={pago.comprobanteURL}
+            download={`comprobante_${key}.jpg`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="botondescarga"
+          >
+            Ver comprobante
+          </a>
+        </div>
+      ))}
     </div>
   ) : (
     <p className="texprimpaog">Tu primer pago será el Domingo</p>
-  )
-}
+  );
+})()}
 
   
 
@@ -235,7 +232,7 @@ const obtenerRangoSemanaActual = () => {
 
 
   
-  </>
+  </section>
 }
 
   
